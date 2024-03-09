@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <div class="alert hidden" id="alert">
+        ¡Texto copiado en el Porta Papeles!
+    </div>
+    <main class="quote-app">
+        <article class="quote-section">
+            <h1 id="author-name" class="quote-section__author">George Bernard Shaw</h1>
+            <div class="quote-section__buttons" id="tags-container">
+                <span id="famous-quotes-btn" class="quote-button quote-button--famous">Famous Quotes</span>
+                <span id="inspirational-btn" class="quote-button quote-button--inspirational">Inspirational</span>
+            </div>
+            <div class="quote-section__figure">
+                <p id="quote-text" class="quote-section__quote">
+                    "Learn from yesterday, live for today, hope for tomorrow."
+                </p>
+            </div>
+        </article>
+        <div class="quote-controls">
+            <div class="quote-controls-container">
+                <button class="quote-controls__button" id="random-button">
+                    <span class="material-symbols-outlined">repeat</span>
+                </button>
+                <button class="quote-controls__button" id="copy-button">
+                    <span class="material-symbols-outlined">link</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

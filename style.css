@@ -1,0 +1,132 @@
+body {
+    background-color: 111729;
+    display: grid;
+    place-content: center;
+    margin: 0;
+}
+.alert{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 64px;
+    width: 100%;
+    font-family: 'outfit';
+    font-size: 16px;
+    color: #6466E9;
+    transition: color, 0.2s;
+}
+
+.hidden{
+    color: #97a3b600;
+    visibility: hidden;
+}
+
+.quote-app {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1280;
+    margin: 82px;
+    gap: 24px;
+}
+
+.quote-section {
+    background: url('card.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    border-radius: 24px;
+}
+
+.quote-section__author {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "outfit";
+    font-weight: 600;
+    text-align: center;
+    margin: 16px;
+}
+
+.quote-section__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    & span {
+        font-size: 0.75rem;
+        border: solid 1px #6466E9;
+        padding: 4px 12px;
+        border-radius: 16px;
+        color: #6466E9;
+        background: none;
+        font-family: "outfit";
+    }
+}
+
+.quote-section__quote {
+    display: flex;
+    justify-content: center;
+    font-family: "outfit";
+    font-size: 24px;
+    font-weight: 300;
+    color: #97A3B6;
+    margin: 32px 24px;
+    text-align: center;
+}
+
+.quote-controls {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-controls-container::before {
+    content: '';
+    height: 100%; 
+    width: 1px; 
+    background-color: #97A3B6; 
+    position: absolute;
+    left: 50%; 
+  }
+.quote-controls-container {
+    border: solid 1px #97A3B6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+    & button {
+        padding: 4px 16px;
+        background: none;
+        border: none;
+        transition: transform 0.25s, color 0.5s;
+    }
+
+    & button:hover{
+        transform: scale(1.15);
+    }
+    & button:active > span{
+       color: #6466E9;
+    }
+
+    & span {
+        color: #97A3B6;
+        font-size: 34px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .quote-section {
+        grid-column-start: 3;
+        grid-column-end: 11;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .quote-section {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+}
