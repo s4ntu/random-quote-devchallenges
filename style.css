@@ -100,8 +100,7 @@ body {
     & button {
         padding: 4px 16px;
         background: none;
-        border: none;
-        transition: transform 0.25s, color 0.5s;
+        border: none;
     }
 
     & button:active > span{
