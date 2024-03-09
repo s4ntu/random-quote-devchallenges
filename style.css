@@ -104,9 +104,6 @@ body {
         transition: transform 0.25s, color 0.5s;
     }
 
-    & button:hover{
-        transform: scale(1.15);
-    }
     & button:active > span{
        color: #6466E9;
     }
